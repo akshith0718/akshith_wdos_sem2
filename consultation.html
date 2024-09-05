@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Hospital | Consulting Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="consultation.html">Consultation Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Consultation Reservation</h1>
+        <p>Reserve a consultation with one of our qualified doctors using the form below.</p>
+    </header>
+
+    <section style="background-image: url(images/image14.jpg); background-size: cover;">
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Select a Doctor</option>
+                <option value="dr-smith">Dr. John Smith (Cardiology)</option>
+                <option value="dr-doe">Dr. Jane Doe (Neurology)</option>
+                <option value="dr-davis">Dr. Peter Davis (Pediatrics)</option>
+            </select>
+
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="message">Additional Comments:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any special requests or concerns?"></textarea>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 City Hospital - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
